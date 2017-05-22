@@ -1,0 +1,11 @@
+﻿将删除 .sass-cache/
+将删除 dist/
+将删除 node_modules/
+将删除 .idea/
+
+将删除 .idea/hywin.iml
+将删除 .idea/jsLibraryMappings.xml
+将删除 .idea/misc.xml
+将删除 .idea/modules.xml
+将删除 .idea/vcs.xml
+将删除 .idea/workspace.xml

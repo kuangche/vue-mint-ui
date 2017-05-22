@@ -1,0 +1,60 @@
+{
+  "name": "hywin",
+  "version": "1.0.0",
+  "description": "vue2.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "vuex",
+    "vue-router",
+    "es6",
+    "sass",
+    "webpack",
+    "gulp"
+  ],
+  "author": "jige",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.1.0",
+    "babel-plugin-component": "^0.6.0",
+    "babel-plugin-transform-runtime": "^6.1.2",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-stage-0": "^6.1.2",
+    "babel-runtime": "^5.8.0",
+    "browser-sync": "^2.18.1",
+    "css-loader": "^0.23.1",
+    "del": "^2.2.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "gulp": "^3.9.1",
+    "gulp-base64": "^0.1.3",
+    "gulp-changed": "^1.3.2",
+    "gulp-compass": "^2.1.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-watch": "^4.3.10",
+    "gulp-webpack": "^1.5.0",
+    "style-loader": "^0.13.1",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^7.3.0",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "d3": "^3.5.17",
+    "echarts": "^3.3.2",
+    "gulp-uglify": "^2.0.0",
+    "jquery": "^3.1.1",
+    "mint-ui": "^2.1.0",
+    "mockjs": "^1.0.1-beta3",
+    "moment": "^2.17.0",
+    "vue": "^2.0.5",
+    "vue-resource": "^1.0.3",
+    "vue-router": "^2.0.2",
+    "vuex": "^2.0.0"
+  }
+}
