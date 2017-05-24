@@ -1,0 +1,261 @@
+/*--并购事件--*/
+.events{
+  .eventsCon{
+    position: relative;
+    .pageTab{
+      position: absolute;
+      left: 0.1rem;
+      top: 0.1rem;
+      right: 0;
+      z-index: 9;
+      span{
+        height: 25px;
+        background: none;
+        line-height: 25px;
+        border-radius: 10px;
+        box-shadow: none;
+        margin: 0 0.05rem;
+        font-weight: normal;
+        display: inline-block;
+        padding:0 0.1rem;
+        color:$gray-ad;
+        &.curr{
+          color: $red;
+          border: 1px solid $border-color-e5;
+        }
+      }
+    }
+    .chartBox{
+      height: 100%;
+      .mapBox{
+        width: 100%;
+        height: 60%;
+        min-height: 3rem;
+        border-bottom: 1px solid $border-color;
+      }
+      .orderCon{
+        height: 40%;
+        min-height: 3rem;
+        padding-top: 0.4rem;
+        border-bottom:1px solid $border-color;
+        .orderHeader{
+          height: 0.4rem;
+          line-height: 0.4rem;
+          margin-top: -0.4rem;
+          padding:  0 0.1rem;
+          @extend .clearfix;
+          .title{
+            float: left;
+          }
+          .total{
+            float: right;
+            .address{}
+            .number{
+              color: $red;
+            }
+          }
+        }
+        .orderBox{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .moreInfo{
+        background-color: #fbfbfb;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        padding: 0 0.15rem;
+        border-bottom:1px solid $border-color;
+        span{
+          display: inline-block;
+          width: 100%;
+          height: 0.4rem;
+          line-height: 0.4rem;
+          background-image: image-url('arrowBottom.png');
+          background-repeat: no-repeat;
+          background-size: 0.12rem 0.07rem;
+          background-position: right center;
+        }
+        &.showUp{
+          span{
+            background-image: image-url('arrowTop.png');
+          }
+        }
+      }
+      .dataList{
+        width: 100%;
+        padding-top: 0.31rem;
+        ul{
+          @extend .clearfix;
+          li{
+            white-space: nowrap;
+            text-align: center;
+            display: table-cell;
+          }
+        }
+        .headerCon{
+          margin-top: -0.31rem;
+          .headerItem{
+            border-bottom: 1px solid $border-color;
+            white-space: nowrap;
+            position: relative;
+            left:0px;
+            li{
+              line-height: 0.3rem;
+              padding: 0 0.1rem;
+              font-weight: bold;
+              &:nth-child(even){
+                background-color: #fbfbfb;
+              }
+            }
+          }
+        }
+        .itemCon{
+          width: 100%;
+          overflow: auto;
+          white-space: nowrap;
+          .item{
+            border-bottom: 1px solid #e8e7e7;
+            li{
+              height: 100%;
+              white-space: initial;
+              padding: 0.1rem 0.05rem;
+              vertical-align: text-top;
+              &:nth-child(even){
+                background-color: #fbfbfb;
+              }
+              &:nth-child(1){
+                font-size:0.12rem;
+              }
+              &:nth-child(2){
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.eventsDetail{
+  .eventsDetailCon{
+    padding:0 0.1rem;
+    h3{
+      line-height: 0.4rem;
+      text-align: left;
+      font-size: 0.14rem;
+      margin-top: -0.4rem;
+    }
+
+    .topInfo{
+      padding-top: 0.4rem;
+      .topInfoCon{
+        .topInfoHeader{
+          border: 1px solid $border-color;
+          @extend .clearfix;
+          li{
+            width: 33.33%;
+            height: 0.3rem;
+            line-height: 0.3rem;
+            float: left;
+            text-align: center;
+            span{
+              line-height: 0.32rem;
+              width: 80%;
+              display: inline-block;
+              margin-bottom: -2px;
+              height: 0.32rem;
+            }
+            &.curr{
+              span{
+                border-bottom: 2px solid $red;
+                color: $red;
+              }
+            }
+          }
+        }
+        .detailInfo{
+          border: 1px solid $border-color;
+          border-top:none;
+          li{
+            margin: 0 0.1rem;
+            border-bottom: 1px solid $border-color;
+            @extend .clearfix;
+            &:last-child{
+              border-bottom: none;
+            }
+            span{
+              float: left;
+              text-align: center;
+              &.title{
+                width: 30%;
+                line-height: 0.4rem;
+                color: $gray-ad;
+              }
+              &.value{
+                width: 70%;
+                line-height: 0.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .tradeDetail{
+      padding-top: 0.4rem;
+      .tradeDetailCon{
+        .tableStyle{
+          border-top: 1px solid $border-color;
+          border-left: 1px solid $border-color;
+          @extend .clearfix;
+          li{
+            width: 50%;
+            float: left;
+            border-right: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
+            @extend .clearfix;
+            span{
+              white-space: nowrap;
+              width: 50%;
+              float: left;
+              padding: 0 0.05rem;
+              line-height: 0.4rem;
+              &.title{
+                color: $gray-ad;
+              }
+            }
+          }
+          &:first-child{
+            margin-bottom:0.1rem;
+            .value{
+              color: $red;
+              padding:0;
+            }
+          }
+        }
+      }
+    }
+    .process{
+      padding-top: 0.4rem;
+      ul{
+        margin: 0 0.1rem;
+        li{
+          line-height: 0.2rem;
+          background-image: image-url('timeLinePointIcon.png');
+          background-size: 0.2rem 0.2rem;
+          background-repeat: no-repeat;
+          background-position: left top;
+          padding-left: 0.3rem;
+          margin: 0.1rem 0;
+          span{
+            display: inline-block;
+          }
+          .title{
+            margin-right: 0.05rem;
+            color: $gray-ad;
+          }
+        }
+      }
+    }
+  }
+}

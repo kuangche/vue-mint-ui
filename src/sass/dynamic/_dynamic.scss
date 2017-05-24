@@ -1,0 +1,195 @@
+/*--交易机会--*/
+.dynamic{
+  .dynamicCon{
+    padding-top: 0.4rem;
+    width:100%;
+    overflow: hidden;
+    .dataList{
+      width: 100%;
+      height:100%;
+      padding-top: 0.31rem;
+      ul{
+        @extend .clearfix;
+        li{
+          white-space: nowrap;
+          text-align: center;
+          display: table-cell;
+        }
+      }
+      .headerCon{
+        margin-top: -0.31rem;
+        .headerItem{
+          border-bottom: 1px solid $border-color;
+          white-space: nowrap;
+          position: relative;
+          left:0px;
+          li{
+            line-height: 0.3rem;
+            padding: 0 0.1rem;
+            font-weight: bold;
+            &:nth-child(even){
+              background-color: #fbfbfb;
+            }
+          }
+        }
+      }
+      .itemCon{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        white-space: nowrap;
+        .item{
+          border-bottom: 1px solid #e8e7e7;
+          li{
+            height: 100%;
+            white-space: initial;
+            padding: 0.1rem 0.05rem;
+            vertical-align: text-top;
+            &:nth-child(even){
+              background-color: #fbfbfb;
+            }
+            &:nth-child(1){
+              font-size:0.12rem;
+            }
+            &:nth-child(2){
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+  .myMoreInfo{
+    width:100%;
+    padding: 0.2rem;
+    .moreInfo{
+      width: 100%;
+      li{
+        .share,.download,.collect{
+          color:$gray;
+          display: inline-block;
+          line-height: 0.4rem;
+          padding-left: 0.3rem;
+          background-position: left center;
+          background-size: 0.25rem 0.25rem;
+          background-repeat: no-repeat;
+        }
+        .share{
+          background-image: image-url('shareIcon.png');
+        }
+        .download{
+          background-image: image-url('downloadIcon.png');
+        }
+        .collect{
+          background-image: image-url('collectIcon.png');
+        }
+        .desc{
+          float: right;
+          line-height: 0.4rem;
+          color: $gray-ad;
+        }
+      }
+    }
+  }
+}
+.dynamicDetail{
+  .dynamicDetailCon{
+    padding: 0 0.1rem;
+    .chartCon{
+      padding-top: 0.4rem;
+      height: 1.8rem;
+      margin-bottom: 0.15rem;
+      h3{
+        text-align: center;
+        padding: 0 0.1rem;
+        line-height: 0.4rem;
+        margin-top: -0.4rem;
+        font-size:0.14rem;
+        font-weight:normal;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .chartBox{
+        height: 100%;
+        width: 100%;
+        border: 1px solid $border-color;
+        background-image: image-url('chartPic.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+    .middleInfo{
+      ul{
+        @extend .clearfix;
+        li{
+          float: left;
+          text-align: center;
+          white-space:nowrap;
+          &:nth-child(1){
+            width: 40%;
+          }
+          &:nth-child(2){
+            width: 30%;
+          }
+          &:nth-child(3){
+            width: 30%;
+          }
+        }
+      }
+      .headerLine{
+        line-height: 0.35rem;
+        border: 1px solid $border-color;
+      }
+      .body{
+        line-height: 0.6rem;
+        border: 1px solid $border-color;
+        .money{
+          color: $red;
+        }
+        .status{
+          background-image: image-url('markIcon.png');
+          background-size: 0.45rem 0.46rem;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+    }
+    .companyDeatil{
+      padding-top:0.4rem;
+      margin-bottom: 0.2rem;
+      h3{
+        text-align: center;
+        padding: 0 0.1rem;
+        line-height: 0.4rem;
+        margin-top: -0.4rem;
+        font-size:0.14rem;
+        font-weight:normal;
+      }
+      .companyDeatilCon{
+        max-height: 1.5rem;
+        overflow-y: auto;
+        border: 1px solid $border-color;
+        padding:0.1rem;
+        text-indent: 0.26rem;
+        line-height: 0.24rem;
+      }
+    }
+    .companyTimeLine{
+      li{
+        margin: 0.15rem 0.1rem;
+        padding-left:0.3rem;
+        line-height: 0.2rem;
+        background-image: image-url('timeLinePointIcon.png');
+        background-size: 0.2rem 0.2rem;
+        background-repeat: no-repeat;
+        background-position: left top;
+        .time{
+          margin-right: 0.05rem;
+          color: $gray-ad;
+        }
+      }
+    }
+  }
+}

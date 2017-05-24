@@ -1,0 +1,142 @@
+.modle{
+  .modleCon{
+    .chartCon{
+      margin: 0.15rem 0;
+      height: 2.5rem;
+      padding-top: 0.4rem;
+      border-top: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
+      .chartHeader{
+        @extend .clearfix;
+        height: 0.4rem;
+        margin:-0.4rem 0.1rem 0;
+        border-bottom: 1px solid $border-color-e5;
+        .mint-badge{
+          line-height: 0.14rem;
+          border-radius: 0px;
+          margin-left: 0.05rem;
+        }
+        .total{
+          float: left;
+          line-height: 0.4rem;
+          font-size: 0.16rem;
+          .mint-badge{
+            background-color: #3dd417;
+            font-size: 0.12rem;
+          }
+        }
+        .info{
+          float: right;
+          line-height: 0.4rem;
+          .money{
+            font-size: 0.16rem;
+          }
+          .percent{
+            color: $gray-ad;
+          }
+          .mint-badge{
+            background-color: #90d2ee;
+          }
+        }
+      }
+      .chartLine{
+        height: 100%;
+        @extend .clearfix;
+        .chartBox{
+          float: left;
+          width: 40%;
+          height: 100%;
+        }
+        .chartDesc{
+          width: 60%;
+          height:100%;
+          float: left;
+          position: relative;
+          ul{
+            width:100%;
+            height: 1.2rem;
+            position: absolute;
+            top:50%;
+            margin-top: -0.6rem;
+            li{
+              height:0.4rem;
+              width:100%;
+              line-height:0.4rem;
+              padding-left:0.3rem;
+              background-size: 0.20rem 0.17rem;
+              background-repeat:no-repeat;
+              background-position:left center;
+              .name{
+                color: $gray-ad;
+                margin-right: 0.1rem;
+              }
+              .number{
+                min-width:0.85rem;
+                display:inline-block;
+                text-align:right;
+              }
+            }
+            .first{
+              background-image:image-url('firstIcon.png');
+            }
+            .second{
+              background-image:image-url('secondIcon.png');
+            }
+            .third{
+              background-image:image-url('thirdIcon.png');
+            }
+          }
+        }
+      }
+    }
+    .orderCon{
+      border-top: 1px solid $border-color;
+      padding:0 0.1rem;
+      h3{
+        font-size:0.16rem;
+        line-height: 0.4rem;
+      }
+      table{
+        width:100%;
+        border-top: 1px solid $border-color;
+        line-height: 0.3rem;
+        .right{
+          text-align: right;
+        }
+        &>tr{
+          th{
+            color: $gray-ad;
+            border-right: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
+            text-align: center;
+            padding:0 0.05rem;
+            font-weight: normal;
+            white-space: nowrap;
+            &:last-child{
+              border-right:none;
+            }
+            &:nth-child(even){
+              background-color: #f8f8f8;
+            }
+          }
+          td{
+            border-right: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
+            text-align: center;
+            padding:0 0.1rem;
+            white-space: nowrap;
+            &:last-child{
+              border-right:none;
+            }
+            &.percent{
+              color:$red;
+            }
+            &:nth-child(even){
+              background-color: #f8f8f8;
+            }
+          }
+        }
+      }
+    }
+  }
+}

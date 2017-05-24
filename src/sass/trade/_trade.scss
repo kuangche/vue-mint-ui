@@ -1,0 +1,111 @@
+/*--交易机会--*/
+.trade{
+  .tradeCon{
+    padding-top: 0.4rem;
+    width:100%;
+    overflow: hidden;
+    .dataList{
+      width: 100%;
+      height:100%;
+      padding-top: 0.31rem;
+      ul{
+        @extend .clearfix;
+        li{
+          display: table-cell;
+          white-space: nowrap;
+          text-align: center;
+        }
+      }
+      .headerCon{
+        margin-top: -0.31rem;
+        .headerItem{
+          border-bottom: 1px solid $border-color;
+          white-space: nowrap;
+          position: relative;
+          left:0px;
+          li{
+            line-height: 0.3rem;
+            text-align: center;
+            padding: 0 0.05rem;
+            font-weight: bold;
+            &:nth-child(even){
+              background-color: #fbfbfb;
+            }
+            &:nth-child(2){
+              text-align: right;
+            }
+          }
+        }
+      }
+      .itemCon{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        white-space: nowrap;
+        .item{
+          border-bottom: 1px solid #e8e7e7;
+          li{
+            white-space: initial;
+            padding: 0.1rem 0.05rem;
+            vertical-align: text-top;
+            text-align: center;
+            &:nth-child(even){
+              background-color: #fbfbfb;
+            }
+            &:nth-child(2){
+              text-align: right;
+            }
+            &:nth-child(1){
+              text-align: left;
+            }
+            .money{
+              color: $red;
+              display: block;
+              text-align: right;
+              margin-right: 0.1rem;
+            }
+            .time{
+              color: $gray-ad;
+              text-align: right;
+              display: block;
+              margin-right: 0.1rem;
+              font-size: 0.12rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .myMoreInfo{
+    width:100%;
+    padding: 0.2rem;
+    .moreInfo{
+      width: 100%;
+      li{
+        .share,.download,.collect{
+          color:$gray;
+          display: inline-block;
+          line-height: 0.4rem;
+          padding-left: 0.3rem;
+          background-position: left center;
+          background-size: 0.25rem 0.25rem;
+          background-repeat: no-repeat;
+        }
+        .share{
+          background-image: image-url('shareIcon.png');
+        }
+        .download{
+          background-image: image-url('downloadIcon.png');
+        }
+        .collect{
+          background-image: image-url('collectIcon.png');
+        }
+        .desc{
+          float: right;
+          line-height: 0.4rem;
+          color: $gray-ad;
+        }
+      }
+    }
+  }
+}

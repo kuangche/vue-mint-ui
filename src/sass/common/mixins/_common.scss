@@ -1,0 +1,24 @@
+@mixin size($width:100%,$height:auto){
+  width:$width;
+  height: $height;
+}
+
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin gradient($color1,$color2,$opacity1:0%,$opacity2:100%){
+  background: -moz-linear-gradient(top, $color1 $opacity1, $color2 $opacity2);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop($opacity1,$color1), color-stop($opacity2,$color2));
+  background: -webkit-linear-gradient(top, $color1 $opacity1,$color2 $opacity2);
+  background: -o-linear-gradient(top, $color1 $opacity1,$color2 $opacity2);
+  background: -ms-linear-gradient(top, $color1 $opacity1,$color2 $opacity2);
+  background: linear-gradient(to bottom, $color1 $opacity1,$color2 $opacity2);
+}
+
+@mixin border-gradient($color1,$color2,$opacity1:0%,$opacity2:100%){
+  border-image: -webkit-linear-gradient( $color1,$color2) $opacity1 $opacity2;
+  border-image: -moz-linear-gradient( $color1,$color2) $opacity1 $opacity2;
+  border-image: linear-gradient( $color1 ,$color2) $opacity1 $opacity2;
+}

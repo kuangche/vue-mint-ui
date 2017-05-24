@@ -1,0 +1,87 @@
+.user{
+  .userCon{
+    .mint-cell-title{
+      margin:0 0 0 0.3rem;
+      .mint-cell-label {
+        color: #888;
+        display: block;
+        font-size: 12px;
+        margin-top: 3px;
+        float: right;
+      }
+    }
+    .userInfo{
+      min-height: 0.8rem;
+      .mint-cell-wrapper{
+        background: none;
+      }
+      .mint-cell-title{
+        margin:0 0.2rem 0 0.7rem;
+        .mint-cell-label {
+          color: #888;
+          display: block;
+          font-size: 12px;
+          margin-top: 3px;
+          float: inherit;
+        }
+      }
+      .account{
+        font-size: 0.12rem;
+      }
+      .userPic {
+        height: 0.6rem;
+        width: 0.6rem;
+        position: absolute;
+        left: 0.1rem;
+        top:0.1rem;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .modle,.money,.bank,.collect,.safe,.attention{
+      .icon{
+        position: absolute;
+        left: 0.1rem;
+        top:0.14rem;
+        width: 0.2rem;
+        height: 0.2rem;
+        background-size: 0.2rem 0.2rem;
+      }
+    }
+    .modle{
+      .icon{
+        background-image: image-url('modleIcon.png');
+      }
+    }
+    .money{
+      .icon{
+        background-image: image-url('moneyIcon.png');
+      }
+      .mint-cell-label{
+        color: $red;
+      }
+    }
+    .bank{
+      .icon{
+        background-image: image-url('bankIcon.png');
+      }
+    }
+    .safe{
+      .icon{
+        background-image: image-url('safeIcon.png');
+      }
+    }
+    .collect{
+      .icon{
+        background-image: image-url('collectIcon1.png');
+      }
+    }
+    .attention{
+      .icon{
+        background-image: image-url('attentionIcon.png');
+      }
+    }
+  }
+}

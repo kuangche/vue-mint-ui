@@ -1,0 +1,125 @@
+html{
+  height: 100%;
+  font-size: 100px;
+}
+body{
+  height: 100%;
+  font-family:Arial,"Microsoft Yahei","微软雅黑","宋体";
+}
+ul,li,h1,h2,h3,h4,h5,h6,table,th,td{ margin: 0; padding: 0;}
+li{ list-style: none;}
+a,a:link,a:visited,a:hover,a:active{
+  text-decoration:none!important;
+}
+/* 清除布局浮动 */
+.clearfix:before,.clearfix:after{ content:""; display:block;}
+.clearfix:after{ clear:both;}
+.clearfix{ zoom:1;}
+
+#container{
+  height: 100%;
+  padding: 0.45rem 0 0.5rem;
+  /*-----页面头部-------*/
+  .mint-header{
+    background-color: $red;
+    height: 0.45rem;
+    .mint-header-title{
+      color: #fff;
+      font-size: 0.16rem;
+    }
+    .mintui-back,.mintui-search{
+      color: #fff;
+      font-size: 0.18rem;
+    }
+    .mintui-setting{
+      width: 0.16rem;
+      height: 0.16rem;
+      background-image: image-url('settingIcon.png');
+      background-size: 100% 100%;
+      display: inline-block;
+    }
+  }
+
+  /*-----页面主体部分-------*/
+  >:nth-child(2){
+    height: 100%;
+    overflow-y: auto;
+    /*-----头部筛选器-------*/
+    .filter{
+      @extend .clearfix;
+      border-bottom: 1px solid $border-color;
+      margin-top: -0.4rem;
+      height: 0.4rem;
+      overflow: hidden;
+      .moreListIcon{
+        width: 0.21rem;
+        height: 0.15rem;
+        margin: 0.13rem 0.13rem 0;
+        float: right;
+        background-image: image-url('moreListIcon.png');
+        background-size:0.21rem 0.15rem;
+        opacity: 0.4;
+      }
+    }
+  }
+  /*----footer menu-----*/
+  .mint-tabbar{
+    height: 0.5rem;
+    overflow: hidden;
+    a{
+      color: $gray;
+    }
+    .tradeIcon,.dynamicIcon,.eventsIcon,.userIcon{
+      width: 0.2rem;
+      height: 0.2rem;
+      margin-bottom: 0.05rem;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .tradeIcon{
+      background-image: image-url('tradeIcon0.png');
+      background-size: 0.2rem 0.2rem;
+    }
+    .dynamicIcon{
+      background-image: image-url('dynamicIcon0.png');
+      background-size: 0.2rem 0.18rem;
+    }
+    .eventsIcon{
+      background-image: image-url('eventsIcon0.png');
+      background-size: 0.177rem 0.2rem;
+    }
+    .userIcon{
+      background-image: image-url('userIcon0.png');
+      background-size: 0.19rem 0.2rem;
+    }
+    .router-link-active{
+      color: $red;
+      .tradeIcon{
+        background-image: image-url('tradeIcon1.png');
+      }
+      .dynamicIcon{
+        background-image: image-url('dynamicIcon1.png');
+      }
+      .eventsIcon{
+        background-image: image-url('eventsIcon1.png');
+      }
+      .userIcon{
+        background-image: image-url('userIcon1.png');
+      }
+    }
+  }
+
+  /*---loading---*/
+  .page-infinite-loading {
+    text-align: center;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    margin-bottom:0px;
+    div {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+}
