@@ -1,4 +1,4 @@
-## 配置须知
+﻿## 配置须知
 
 环境依赖：
 
@@ -27,13 +27,13 @@ npm install
 
 ```bash
 gulp watch              // web开发环境构建
-gulp watchM              // mobile开发环境构建
+gulp watchM             // mobile开发环境构建
 ```
 
 ## 发布构建
 
 ```bash
 gulp build              // web发布环境构建
-gulp buildM              // mobile发布环境构建
+gulp buildM             // mobile发布环境构建
 
 ```
