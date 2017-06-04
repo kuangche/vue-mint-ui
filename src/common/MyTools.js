@@ -4,9 +4,9 @@
 import Vue from 'vue';
 const config = require('../../config/index');
 
-//公共工具�?---业务相关
+//公共工具---业务相关
 class MyTools {
-    //本地开发端�?888
+    //本地开发端口888
     static staticUrl = window.location.port == 8888 ? './':config.staticUrl;
 
     static baseUrl = window.location.port == 8888 ? './':config.baseUrl;
